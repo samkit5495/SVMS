@@ -1,0 +1,12 @@
+
+Finger print or face recognization instead of Visitor id
+Visitors photo upload by camera
+Video servilience system
+E-Notice board
+When visitors comes a notification given to owner on it's mobile
+ - SMS
+ - app
+
+Make a device specially for this
+Tab+fingerprint scanner+camera
+

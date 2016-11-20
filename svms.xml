@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.4
+- http://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Oct 01, 2015 at 06:50 PM
+- Server version: 5.6.15-log
+- PHP Version: 5.5.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="svms" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="owner">
+                CREATE TABLE `owner` (
+                  `oname` varchar(20) NOT NULL,
+                  `image` longblob NOT NULL,
+                  `contact` varchar(10) NOT NULL,
+                  `society` varchar(20) NOT NULL,
+                  `wing` int(11) NOT NULL,
+                  `floor` int(11) NOT NULL,
+                  `flat` int(11) NOT NULL,
+                  `username` varchar(20) NOT NULL,
+                  `pass` varchar(20) NOT NULL,
+                  `que` varchar(30) NOT NULL,
+                  `ans` varchar(20) NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="society">
+                CREATE TABLE `society` (
+                  `sname` varchar(50) NOT NULL,
+                  `image` longblob NOT NULL,
+                  `address` varchar(50) NOT NULL,
+                  `wings` int(11) NOT NULL,
+                  `floors` int(11) NOT NULL,
+                  `flats` int(11) NOT NULL,
+                  `username` varchar(20) NOT NULL,
+                  `pass` varchar(20) NOT NULL,
+                  `que` varchar(30) NOT NULL,
+                  `ans` varchar(20) NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="visitor">
+                CREATE TABLE `visitor` (
+                  `vid` varchar(20) NOT NULL,
+                  `vno` varchar(20) NOT NULL,
+                  `vname` varchar(20) NOT NULL,
+                  `mobno` varchar(10) NOT NULL,
+                  `reason` varchar(20) NOT NULL,
+                  `date` date NOT NULL,
+                  `time` time NOT NULL,
+                  `society` varchar(20) NOT NULL,
+                  `wing` int(11) NOT NULL,
+                  `floor` int(11) NOT NULL,
+                  `flat` int(11) NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'svms'
+    -->
+    <database name="svms">
+        <!-- Table owner -->
+        <table name="owner">
+            <column name="oname">samkitkumar jain</column>
+            <column name="image"></column>
+            <column name="contact">8600086024</column>
+            <column name="society">Samkit</column>
+            <column name="wing">6</column>
+            <column name="floor">7</column>
+            <column name="flat">2</column>
+            <column name="username">samkit</column>
+            <column name="pass">samkit</column>
+            <column name="que">What is your nick name ?</column>
+            <column name="ans">Sam</column>
+        </table>
+        <table name="owner">
+            <column name="oname">Aish</column>
+            <column name="image"></column>
+            <column name="contact">9158567974</column>
+            <column name="society">Samkit</column>
+            <column name="wing">1</column>
+            <column name="floor">1</column>
+            <column name="flat">1</column>
+            <column name="username">aish</column>
+            <column name="pass">aish</column>
+            <column name="que">What is your birth-place ?</column>
+            <column name="ans">solapur</column>
+        </table>
+        <!-- Table society -->
+        <table name="society">
+            <column name="sname"> Shri Shantinagar ho</column>
+            <column name="image"></column>
+            <column name="address">Kondhwa,bk,pune</column>
+            <column name="wings">10</column>
+            <column name="floors">11</column>
+            <column name="flats">4</column>
+            <column name="username">samkit</column>
+            <column name="pass">samkit</column>
+            <column name="que">What is your nick name ?</column>
+            <column name="ans">Sam</column>
+        </table>
+        <table name="society">
+            <column name="sname">Shrinath society</column>
+            <column name="image"></column>
+            <column name="address">katrj,Pune</column>
+            <column name="wings">2</column>
+            <column name="floors">4</column>
+            <column name="flats">2</column>
+            <column name="username">Aish</column>
+            <column name="pass">aish</column>
+            <column name="que">What is your birth-place ?</column>
+            <column name="ans">solapur</column>
+        </table>
+        <!-- Table visitor -->
+        <table name="visitor">
+            <column name="vid">Neena chaudhari</column>
+            <column name="vno">MH19 AU0480</column>
+            <column name="vname">Neena chaudhari</column>
+            <column name="mobno">1234567890</column>
+            <column name="reason">friend</column>
+            <column name="date">2015-10-01</column>
+            <column name="time">04:24:26</column>
+            <column name="society">Samkit</column>
+            <column name="wing">6</column>
+            <column name="floor">7</column>
+            <column name="flat">2</column>
+        </table>
+        <table name="visitor">
+            <column name="vid">Pooja jagtap</column>
+            <column name="vno">MH12 HJ523</column>
+            <column name="vname">Pooja jagtap</column>
+            <column name="mobno">1234567890</column>
+            <column name="reason">Friend</column>
+            <column name="date">2015-10-01</column>
+            <column name="time">04:26:00</column>
+            <column name="society">Samkit</column>
+            <column name="wing">1</column>
+            <column name="floor">1</column>
+            <column name="flat">1</column>
+        </table>
+    </database>
+</pma_xml_export>

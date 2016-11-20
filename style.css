@@ -1,0 +1,80 @@
+body
+{
+	background-image: url("Icons/background5.jpg");
+
+}
+div,h1,h2,h3,h4,h5,h6,label,th,td,ul li a,a:link
+{
+	color: white;	
+}
+h1,h2,h3,h4,h5,h6
+{
+text-shadow: 2px 2px 5px red;
+}
+table tbody tr td:hover,table tbody tr th:hover
+{
+	color: black; 
+}
+/*************************title**********************************/
+#title
+{
+	font-size: 3em;
+	font-weight: bold;
+    font-family: buxton sketch;
+    text-shadow: 3px 3px 7px red;	
+}
+#menu
+{
+	margin:0px 10px;
+}
+#menu ul li a
+{
+	font-weight: bold;
+}
+#menu ul li a:hover
+{
+	font-size: 1.1em;
+	color: black;
+}
+/*************************body**********************************/
+#base
+{
+	width: 99%;
+}
+
+#main
+{
+	margin: 10px;
+	clear: both;
+	height: 35em;
+}
+/***********************footer***********************************/
+#footer
+{
+	font-weight: strong;
+	font-size: 2em;
+    font-family: buxton sketch;
+    text-shadow: 2px 2px 5px red;
+}
+
+.s_icons
+{
+	float: left;
+	width: 2em;
+}
+.s_icons a img
+{
+	height: 50px;
+	width: 50px;
+}
+.s_icons a img:hover
+{
+	height: 55px;
+	width: 55px;
+}
+.s_icons:hover
+{
+	
+    border-color: red;
+    box-shadow: 0 0 25px red;
+}
